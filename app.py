@@ -35,6 +35,8 @@ def receive_message():
     return {'ok': True}
 
 if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
     print("🚀 本地服务启动！运行在 http://127.0.0.1:5000")
     print("📡 请使用 ngrok 暴露此服务，以便 Telegram 能访问（公网 URL 如：https://xxxx.ngrok-free.dev/你的_Bot_Token）")
+
     app.run(port=5000)
